@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--sysOID adapt adapter-->
+<adapters>
+   <default>HirschmannGeneric</default>
+   <adapter name="HirschmannGeneric">
+        <description>Generic Hirschmann devices</description>
+        <sysOID>1.3.6.1.4.1.248.14.10.130</sysOID>
+    </adapter>
+</adapters>
