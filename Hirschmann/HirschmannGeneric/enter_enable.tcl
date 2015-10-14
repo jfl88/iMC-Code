@@ -11,7 +11,7 @@ expect {
 		set ERROR_MESSAGE "The user is not authorized to use the 'enable' command."
 		set ERROR_RESULT  true
 		#exit
-	} -re $enable_prompt {
+	} $enable_prompt {
 		# Success
 	}
 }

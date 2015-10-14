@@ -9,7 +9,7 @@ set loop true
 set timeout $standard_timeout
 while {$loop == "true"} {
 	expect {
-		-re $password_prompt {
+		$password_prompt {
 			if {$password == "\x24password" || $password == ""} {
 				set ERROR_MESSAGE "Missing password"
 				set ERROR_RESULT true
@@ -22,7 +22,7 @@ while {$loop == "true"} {
 
 				set sent_password "true"
 			}
-		} -re $login_prompt {
+		} $login_prompt {
 			if {$username == "\x24username" || $username == ""} {
 				set ERROR_MESSAGE "Missing username"
 				set ERROR_RESULT true
@@ -50,7 +50,7 @@ while {$loop == "true"} {
 			set ERROR_MESSAGE "Device rejected the username or password."
 			#exit
 			set loop false
-		} -re $exec_prompt {
+		} $exec_prompt {
 			set loop false
 			#success
 		} timeout {
