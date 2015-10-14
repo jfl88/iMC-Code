@@ -26,14 +26,14 @@
             exit_enable.tcl
         </exit>
     </mode>
-    <function name="reboot"method="CLI">
+    <function name="reboot" method="CLI">
         <error>An error occurred while trying to delete a file from the device.</error>
         <require-mode>enable</require-mode>
         <enter>
             reboot.tcl
         </enter>
     </function>
-    <function name="save"method="CLI">
+    <function name="save" method="CLI">
         <error>An error occurred while trying to save the configuration.</error>
         <enter>
             save.tcl
