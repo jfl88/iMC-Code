@@ -5,9 +5,10 @@
 #**************************************************************************
 
 send "enable\r"
+sleep 1
 expect {
-	-re "$error_pattern" {
-		expect -re $exec_prompt
+	$error_pattern {
+		expect $exec_prompt
 		set ERROR_MESSAGE "The user is not authorized to use the 'enable' command."
 		set ERROR_RESULT  true
 		#exit
