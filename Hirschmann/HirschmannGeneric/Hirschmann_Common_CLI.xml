@@ -1,4 +1,4 @@
-<?xmlversion="1.0"?>
+<?xml version="1.0"?>
 <common>
     <mode name="initialize" method="CLI">
         <require-mode>connect</require-mode>
