@@ -6,6 +6,7 @@
             initialize.tcl
         </enter>
     </mode>
+	
     <mode name="exec" method="CLI">
         <error>Failed to get to exec mode.</error>
         <require-mode>initialize</require-mode>
@@ -16,6 +17,7 @@
             exit_exec.tcl
         </exit>
     </mode>
+	
     <mode name="enable" method="cli">
         <error>Failed to get to enable mode.</error>
         <require-mode>exec</require-mode>
@@ -26,6 +28,7 @@
             exit_enable.tcl
         </exit>
     </mode>
+	
     <function name="reboot" method="CLI">
         <error>An error occurred while trying to delete a file from the device.</error>
         <require-mode>enable</require-mode>
@@ -33,10 +36,12 @@
             reboot.tcl
         </enter>
     </function>
+	
     <function name="save" method="CLI">
         <error>An error occurred while trying to save the configuration.</error>
         <enter>
             save.tcl
         </enter>
     </function>
+	
 </common>

@@ -1,9 +1,7 @@
 
 #**************************************************************************
-# Identification: save.tcl
-# Purpose:        save device configuration
-#                 don't support
+# Identification:save_config.tcl
+# Purpose:       save device configuration
 #**************************************************************************
-proc save {} {
-    return
-}
+
+save
