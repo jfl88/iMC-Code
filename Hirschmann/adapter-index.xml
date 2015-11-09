@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--sysOID adapt adapter-->
 <adapters>
-   <default>HirschmannGeneric</default>
-   <adapter name="HirschmannGeneric">
-        <description>Generic Hirschmann devices</description>
-        <sysOID>1.3.6.1.4.1.248.14.10.130</sysOID>
-    </adapter>
+    <type name="CLI">
+        <default>HirschmannGeneric</default>
+        <adapter name="HirschmannGeneric">
+            <description>Generic Hirschmann devices</description>
+            <sysOID>1.3.6.1.4.1.248.14.10.130</sysOID> <!-- mach100ge -->
+            <sysOID>1.3.6.1.4.1.248.14.10.131</sysOID> <!-- mach1000ge -->
+            <sysOID>1.3.6.1.4.1.248.14.10.110</sysOID> <!-- mach100 -->
+            <sysOID>1.3.6.1.4.1.248.14.10.40</sysOID> <!-- rs20 -->
+            <sysOID>1.3.6.1.4.1.248.14.10.30</sysOID> <!-- ms20 -->
+            <sysOID>1.3.6.1.4.1.248.14.10.10</sysOID> <!-- ms4128 -->
+        </adapter>
+    </type>
+    <type name="SNMP">
+        <adapter name="HirschmannSNMP">
+            <description>Hirschmann SNMP adapter</description>
+            <sysOID>1.3.6.1.4.1.248.14.10.130</sysOID> <!-- mach100ge -->
+            <sysOID>1.3.6.1.4.1.248.14.10.131</sysOID> <!-- mach1000ge -->
+            <sysOID>1.3.6.1.4.1.248.14.10.110</sysOID> <!-- mach100 -->
+            <sysOID>1.3.6.1.4.1.248.14.10.40</sysOID> <!-- rs20 -->
+            <sysOID>1.3.6.1.4.1.248.14.10.30</sysOID> <!-- ms20 -->
+            <sysOID>1.3.6.1.4.1.248.14.10.10</sysOID> <!-- ms4128 -->
+        </adapter>
+    </type>
 </adapters>
