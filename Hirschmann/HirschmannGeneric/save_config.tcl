@@ -1,9 +1,7 @@
 
 #**************************************************************************
-# Identification:exit_enable
-# Purpose:       exit the "enable" mode on the device
+# Identification:save_config.tcl
+# Purpose:       save device configuration
 #**************************************************************************
 
-send "exit\r"
-sleep 1
-expect $exec_prompt
+save

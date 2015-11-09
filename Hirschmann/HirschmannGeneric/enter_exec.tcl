@@ -16,10 +16,9 @@ while {$loop == "true"} {
 				set loop false
 				#exit
 			} else {
-			    send "$password"
+			    send $password
 			    sleep 1
 				send "\r"
-
 				set sent_password "true"
 			}
 		} $login_prompt {
@@ -29,7 +28,7 @@ while {$loop == "true"} {
 				set loop false
 				#exit
 			} else {
-				if {sent_password == "true"} {
+				if {$sent_password == "true"} {
 					set ERROR_MESSAGE "Password / Username combination not accepted"
 					set ERROR_RESULT true
 					set loop false
