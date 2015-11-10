@@ -27,7 +27,7 @@ func-type:  Common/CheckResult, default is Common
 	<vb-list>
 		<vb>
 			<oid>1.3.6.1.4.1.248.14.2.4.8</oid>
-			<waiting-value>1</waiting-value>
+			<waitting-value>1</waitting-value>
 			<running-value>2</running-value>
 			<expected-value>3</expected-value>
 		</vb>
