@@ -1,0 +1,23 @@
+
+<adapter name="HirschmannSNMPBasic">
+	<description>Hirschmann SNMP commands as outlined in hmpriv.mib supplied with v9 firmware</description>
+	<version>1.0.0</version>
+
+	<services>
+		<service name="ConfigBackup">
+		    <item type="builder_definition">HirschmannSNMPBasic_Config_Backup_Builder.xml</item>
+		    <item type="snmp_script">HirschmannSNMPBasic_Config_Backup_Builder_Script.xml</item>
+		</service>
+
+		<!--<service name="ConfigDeploy">
+		    <item type="builder_definition">HirschmannSNMPBasic_Config_Deploy_Builder.xml</item>
+		    <item type="snmp_script">HirschmannSNMPBasic_Config_Deploy_Builder_Script.xml</item>
+		</service>-->
+
+		<!--service name="ImageDeploy">
+			<item type="builder_definition">HirschmannSNMPBasic_Image_Deploy_Builder.xml</item>
+			<item type="snmp_script">HirschmannSNMPBasic_Image_Deploy_Builder_Script.xml</item>
+		</service-->
+
+	</services>
+</adapter>

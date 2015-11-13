@@ -9,10 +9,10 @@
 		    <item type="snmp_script">HirschmannSNMP_Config_Backup_Builder_Script.xml</item>
 		</service>
 
-		<service name="ConfigDeploy">
+		<!--<service name="ConfigDeploy">
 		    <item type="builder_definition">HirschmannSNMP_Config_Deploy_Builder.xml</item>
 		    <item type="snmp_script">HirschmannSNMP_Config_Deploy_Builder_Script.xml</item>
-		</service>
+		</service>-->
 
 		<!--service name="ImageDeploy">
 			<item type="builder_definition">HirschmannSNMP_Image_Deploy_Builder.xml</item>

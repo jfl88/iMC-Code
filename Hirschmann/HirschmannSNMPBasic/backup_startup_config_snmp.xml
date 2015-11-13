@@ -26,10 +26,10 @@ func-type:  Common/CheckResult/CheckExecResult, default is Oper
 			<value>tftp://$TFTPServer/$TFTPFile</value>
 			<data-type>DisplayString</data-type>
 		</vb>
-        <!-- Tell device to save config to remote script file -->
+        <!-- Tell device to save config to remote binary file -->
 		<vb>
             <oid>1.3.6.1.4.1.248.14.2.4.6.0</oid>
-            <value>21</value>
+            <value>6</value>
         </vb>
 
 	</vb-list>
