@@ -20,6 +20,11 @@ func-type:  Common/CheckResult/CheckExecResult, default is Oper
     <error>Failed to backup startup configuration file by snmp, commit snmp failed.</error>
 
 	<vb-list>
+		<!-- Save Running Config to flash -->
+		<vb>
+            <oid>1.3.6.1.4.1.248.14.2.4.6.0</oid>
+            <value>4</value>
+        </vb>
         <!-- Tell device where to save file -->
 		<vb>
 			<oid>1.3.6.1.4.1.248.14.2.4.2.0</oid>

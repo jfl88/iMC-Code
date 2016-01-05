@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<definition>
+	<action name="backup_startup_config">
+
+	    <step>
+	   		<command name="backup_startup_config" description="Backup running configuration via TFTP through SNMP">
+	    	</command>
+		</step>
+	</action>
+</definition>
