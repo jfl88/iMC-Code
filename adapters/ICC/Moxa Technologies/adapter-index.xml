@@ -2,8 +2,8 @@
 <!--sysoid adapt adapter-->
 <adapters>
 	<type name="SNMP">
-		<adapter name="MoxaEDS-g516e">
-			<description>Moxa EDS-g516e Switches SNMP with config backup</description>
+		<adapter name="MoxaEDS-G516E">
+			<description>Moxa EDS-G516E Switches SNMP with config backup</description>
 			<sysoid>1.3.6.1.4.1.8691.7.71</sysoid> <!-- eds-g516e -->
 		</adapter>
 	</type>

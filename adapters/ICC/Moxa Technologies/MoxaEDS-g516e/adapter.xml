@@ -1,23 +1,12 @@
 
-<adapter name="MoxaEDS-g516e">
-	<description>Moxa SNMP commands as outlined in private MIBs for EDS switches on Moxa's website</description>
+<adapter name="MoxaEDS-G516E">
+	<description>Moxa SNMP commands as outlined in private MIB for EDS-G516E switches on Moxa's website</description>
 	<version>1.0.0</version>
 
 	<services>
 		<service name="ConfigBackup">
-		    <item type="builder_definition">MoxaEDS-g516e_Config_Backup_Builder.xml</item>
-		    <item type="snmp_script">MoxaEDS-g516e_Config_Backup_Builder_Script.xml</item>
+		    <item type="builder_definition">MoxaEDS-G516E_Config_Backup_Builder.xml</item>
+		    <item type="snmp_script">MoxaEDS-G516E_Config_Backup_Builder_Script.xml</item>
 		</service>
-
-		<!--<service name="ConfigDeploy">
-		    <item type="builder_definition">MoxaEDS-g516e_Config_Deploy_Builder.xml</item>
-		    <item type="snmp_script">MoxaEDS-g516e_Config_Deploy_Builder_Script.xml</item>
-		</service>-->
-
-		<!--service name="ImageDeploy">
-			<item type="builder_definition">MoxaEDS-g516e_Image_Deploy_Builder.xml</item>
-			<item type="snmp_script">MoxaEDS-g516e_Image_Deploy_Builder_Script.xml</item>
-		</service-->
-
 	</services>
 </adapter>
