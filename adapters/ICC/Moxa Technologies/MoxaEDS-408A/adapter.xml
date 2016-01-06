@@ -1,0 +1,12 @@
+
+<adapter name="MoxaEDS-408A">
+	<description>Moxa SNMP commands as outlined in private MIB for EDS-G516E switches on Moxa's website</description>
+	<version>1.0.0</version>
+
+	<services>
+		<service name="ConfigBackup">
+		    <item type="builder_definition">MoxaEDS-408A_Config_Backup_Builder.xml</item>
+		    <item type="snmp_script">MoxaEDS-408A_Config_Backup_Builder_Script.xml</item>
+		</service>
+	</services>
+</adapter>
