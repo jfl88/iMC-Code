@@ -1,0 +1,14 @@
+
+<adapter name="MoxaEDS-CLI">
+    <description>Moxa Switch CLI-based adapter</description>
+    <version>1.0.0</version>
+    <services>
+        <service name="CLICommon">
+            <item type="common">MoxaEDS_Common_CLI.xml</item>
+            </service>
+        <service name="ConfigBackup">
+                <item type="builder_definition">MoxaEDS_Config_Backup_Builder.xml</item>
+                <item type="tcl_script">MoxaEDS_Config_Backup_Builder_Script.xml</item>
+        </service>
+    </services>
+</adapter>
