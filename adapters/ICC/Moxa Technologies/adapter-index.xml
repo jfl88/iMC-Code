@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--sysoid adapt adapter-->
 <adapters>
+    <type name="CLI">
+        <adapter name="MoxaEDR-CLI">
+            <description>Moxa Secure Router CLI config backup adapter</description>
+            <sysoid>1.3.6.1.4.1.8691.6.13</sysoid> <!-- EDR-810 -->
+        </adapter>
+    </type>
+    
 	<type name="SNMP">
 		<adapter name="MoxaEDS-G516E">
 			<description>Moxa EDS-G516E Switches SNMP with config backup</description>
