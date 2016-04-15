@@ -41,6 +41,8 @@ while {$loop == "true"} {
 		} $exec_prompt {
 			set loop false
 			#success
+		} "Store key in cache? (y/n)" {
+			send "y\r"
 		} timeout {
 			set ERROR_RESULT  true
 			set ERROR_MESSAGE "Timeout to login. No message receive from device!"
