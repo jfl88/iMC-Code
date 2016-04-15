@@ -4,7 +4,7 @@
 # Purpose:       backup startup configuration by tftp
 #**************************************************************************
 
-set timeout $very_long_timeout
+set timeout $long_timeout
 set WARNING_RESULT true
 
 send "copy running-config tftp $TFTPServer $TFTPFile\r"
@@ -15,6 +15,8 @@ expect {
             "tftp: timeout" {
                 set ERROR_MESSAGE "TFTP Operation Timed out - check TFTP Server"
                 set ERROR_RESULT true
+            } $exec_prompt {
+                #success!
             }
         }
     }
