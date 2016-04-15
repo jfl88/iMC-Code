@@ -14,6 +14,7 @@ set squeeze_timeout 15000
 set login_prompt "gin as: "
 set password_prompt "assword: "
 set exec_prompt "#"
+set config_prompt"(config)#"
 
 set enforce_save false
 set timeout $standard_timeout

@@ -4,4 +4,4 @@
 # Purpose:       quit the "exec" mode on the device
 #**************************************************************************
 
-send "exit\r"
+send "logout\r"

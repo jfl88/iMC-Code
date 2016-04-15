@@ -6,30 +6,24 @@
 
 set timeout $very_long_timeout
 set WARNING_RESULT true
-send "copy nvram:startup-config "
+
+send "copy running-config tftp $TFTPServer $TFTPFile\r"
 sleep 1
-send "tftp://$TFTPServer/$TFTPFile\r"
 expect {
-    "*Invalid url*" {
-        set ERROR_MESSAGE "Invalid URL Specified for TFTP Server"
-        set ERROR_RESULT true
-        } "Are you sure you want to start?*" {
-            send "y\r"
-    		sleep 1
-            expect {
-                "nvalid url*" {
-                    set ERROR_MESSAGE "Invalid URL Specified for TFTP Server"
-                    set ERROR_RESULT true
-                } "transfer failed!" {
-                    set ERROR_MESSAGE "File transfer failed on the device, check TFTP server"
-                    set ERROR_RESULT true
-                    expect $enable_prompt
-                } "completed successfully." {
-                    expect $enable_prompt
-                }
+    "Config File is exporting now, please wait." {
+        expect {
+            "tftp: timeout" {
+                set ERROR_MESSAGE "TFTP Operation Timed out - check TFTP Server"
+                set ERROR_RESULT true
             }
         }
+    }
+    $error_pattern {
+        set ERROR_MESSAGE "CLI Command Error."
+        set ERROR_RESULT true
+    }
 }
+
 if { $ERROR_RESULT != true } {
     set WARNING_RESULT false
 }
